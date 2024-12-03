@@ -4,56 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Planner</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="weekly-plan">
+  <div class="planner">
     <header>
-      <h1>Weekly Plan</h1>
-      <div class="header-info">
-        <div>Week of: <input type="text" placeholder="Enter Date"></div>
-        <div>Healthy Habit: <input type="text" placeholder="Enter Habit"></div>
+      <h1 contenteditable="true">WEEKLY PLAN</h1>
+      <div class="header-details">
+        <div class="week-of">
+          WEEK OF: <input type="text"  />
+        </div>
+        <div class="healthy-habit">
+          HEALTHY HABIT: <input type="text"  />
+        </div>
         <div class="checkboxes">
-          <label><input type="checkbox"> Rocked It</label>
-          <label><input type="checkbox"> Room for Improvement</label>
+          <label><input type="checkbox"> ROCKED IT</label>
+          <h7><br><label><input type="checkbox"> ROOM FOR IMPROVEMENT</label></br></h7>
         </div>
       </div>
     </header>
-    
-    <section class="to-do-section">
-      <div class="to-do-list">
-        <h3>Top 3 Goals</h3>
-        <ul>
-          <li><input type="checkbox"> <input type="text" placeholder="Goal 1"></li>
-          <li><input type="checkbox"> <input type="text" placeholder="Goal 2"></li>
-          <li><input type="checkbox"> <input type="text" placeholder="Goal 3"></li>
+    <main>
+      <div class="left-section">
+        <h2>TOP 3 GOALS</h2>
+        <ul class="goals">
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+        </ul>
+        <h2>TO DO</h2>
+        <ul class="tasks">
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+          <li><input type="checkbox"> <input type="text"  /></li>
+        </ul>
+        <h2>NEXT WEEK</h2>
+        <ul class="next-week">
+          <li><input type="checkbox"> <input type="text"  /></li>
         </ul>
       </div>
-      <div class="to-do-list">
-        <h3>Everything Else</h3>
-        <ul>
-          <li><input type="checkbox"> <input type="text" placeholder="Task 1"></li>
-          <li><input type="checkbox"> <input type="text" placeholder="Task 2"></li>
-          <li><input type="checkbox"> <input type="text" placeholder="Task 3"></li>
-        </ul>
+      <div class="right-section">
+        <div class="day">
+          <h2>MONDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>TUESDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>WEDNESDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>THURSDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>FRIDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>SATURDAY</h2>
+          <textarea></textarea>
+        </div>
+        <div class="day">
+          <h2>SUNDAY</h2>
+          <textarea></textarea>
+        </div>
       </div>
-      <div class="to-do-list">
-        <h3>Next Week</h3>
-        <ul>
-          <li><input type="checkbox"> <input type="text" placeholder="Plan 1"></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="days">
-      <div class="day">Monday <textarea></textarea></div>
-      <div class="day">Tuesday <textarea></textarea></div>
-      <div class="day">Wednesday <textarea></textarea></div>
-      <div class="day">Thursday <textarea></textarea></div>
-      <div class="day">Friday <textarea></textarea></div>
-      <div class="day weekend">Saturday <textarea></textarea></div>
-      <div class="day weekend">Sunday <textarea></textarea></div>
-    </section>
+    </main>
   </div>
 </body>
 </html>
