@@ -140,7 +140,7 @@ hr {
 
 /* Головний вміст */
 .main-content {
-    padding-left: 240px; /* Замість margin-left використано padding-left */
+    padding-left: 330px; /* Замість margin-left використано padding-left */
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +192,6 @@ hr {
     text-align: center;
     padding: 10px;
     background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: auto;
+    box-shadow: 0 -10px 14px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
