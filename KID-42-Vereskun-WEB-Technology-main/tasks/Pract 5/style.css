@@ -1,166 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
-    margin: 0;
- }
-
- 
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
 .weekly-plan {
-    margin: 5px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.week-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.week-info label {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.week-info input {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 200px;
-}
-
-
-
-.review {
-    margin-top: 10px;
-    display: grid;
-    gap: 20px;
-}
-
-.review label {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.todo-section {
-    border: 1px solid grey;
-    width: 200px;
-    height: auto;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.todo-section h2 {
-    position: relative;
-    left: 150px;
-    bottom: 10px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.tasks ul {
-    list-style: none;
-    padding: 0;
-}
-
-.tasks li {
-    display: flex;
-    align-items: center;
-    
-}
-
-.tasks input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
 header {
-    display: flex;
-    justify-content: space-between;
+  text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-}
-h3{
-    font-size: 16px;
-    text-align: center;
-    margin: 2px;
-    font: italic;
+header h1 {
+  margin-bottom: 10px;
 }
 
-.week-days div {
-    position: relative;
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.week {
-    position: absolute; 
-    top: 0px; 
-    right: 10px; 
+.header-info input[type="text"] {
+  padding: 5px;
 }
 
-
-input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
+.header-info .checkboxes {
+  display: flex;
+  gap: 10px;
 }
 
-main {
-    display: flex;
-    margin: 0px;
+.to-do-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.tasks ul {
-    list-style: none;
+.to-do-list {
+  flex: 1;
+  margin: 0 10px;
 }
 
-
-.week-days {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(9, 100px); 
-    margin: 5px;
-    width: 100%;
+.to-do-list h3 {
+  margin-bottom: 10px;
 }
 
-.day1, .day2, .day3, .day4, .day5{
-    border: 1px solid gray;
-    width: 100%; 
-    height: 100%;
-    grid-row: span 5; 
+.to-do-list ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.day6 {
-  border: 1px solid gray;   
-  width: 100%; 
-    height: 100%;
+.to-do-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
-.day7 {
-    border: 1px solid gray;
-    width: 100%; 
-    height: 100%;
+
+.to-do-list input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.day {
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  padding: 5px;
+  resize: none;
+  margin-top: 10px;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .weekend {
-    display: grid;
-    grid-column: 3; 
-    grid-row: span 5; 
-    width: 100%; 
-    height: 100%;
+  background-color: #d0d0d0;
 }
-
