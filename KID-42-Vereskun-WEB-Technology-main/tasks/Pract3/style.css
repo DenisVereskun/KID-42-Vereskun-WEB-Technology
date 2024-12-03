@@ -1,81 +1,91 @@
 body {
-    margin-top: 20%;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin-top: 10%;
+    font-family: 'Georgia', Times, serif;
+    background-color: #fdfdfd; /* Класичний білий фон */
+    color: #000; /* Чорний текст */
+    line-height: 1.6;
 }
-
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; 
-    text-align: center;
+    height: auto;
+    text-align: justify;
+    padding: 20px;
+    border: 1px solid #ddd; /* Легкий контур для статей */
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .p1 {
-    background: linear-gradient(45deg, #6062c7, #925cda);
-    color: lightskyblue;
+    background: #f4f4f4; /* Легкий сірий фон */
+    color: #333; /* Темно-сірий текст */
     padding: 15px 30px;
-    border: 2px solid #58e4e4;
-    border-radius: 8px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
     width: auto;
-    margin: 20px;
-    height: 50px;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container-video {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 2px solid #444; /* Лінія для розділення секцій */
+    padding-top: 10px;
+    margin-top: 20px;
 }
-
-
 
 .p1:hover {
-    background: linear-gradient(45deg, #cc5277, #d460d4);
-    border-color: #86cec8;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-.p1:active {
-    transform: scale(0.95);
+    background: #eaeaea; /* Яскравіший сірий при наведенні */
+    border-color: #888;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-h3{
+.p1:active {
+    transform: scale(0.97);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
     text-align: center;
     margin: 30px auto;
-    color: rgb(228, 195, 105);
-    font-size: 30px;
+    color: #444; /* Темно-сірий заголовок */
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #444; /* Лінія під заголовком */
+    padding-bottom: 10px;
 }
 
 .button-link {
-    background: linear-gradient(45deg, #6062c7, #925cda);
-    color: lightsalmon;
-    padding: 15px 20px;
+    background: #f4f4f4;
+    color: #000; /* Чорний текст */
+    padding: 10px 15px;
     text-decoration: none; 
-    width: auto;
-    height: 17px;
-
-
-    border: 2px solid #58e4e4;
-    border-radius: 10px;
-    
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-transform: uppercase;
     transition: all 0.3s ease;
-
 }
 
 .button-link:hover {
-    background: linear-gradient(45deg, #cc5277, #d460d4);
-    border-color: #86cec8;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background: #eaeaea;
+    border-color: #888;
+    color: #444;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .button-link:active {
-    transform: scale(0.95);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.97);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
