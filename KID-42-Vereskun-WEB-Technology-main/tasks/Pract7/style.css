@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +23,19 @@ body {
 }
 
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .header__title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
-    color: #222;
+    color: #00796b;
+    margin-bottom: 10px;
 }
 
 .header__subtitle {
-    font-size: 18px;
-    color: #666;
+    font-size: 20px;
+    color: #004d40;
 }
 
 .intro {
@@ -42,39 +43,45 @@ body {
 }
 
 .intro__image-container {
-    margin: 0 auto 20px;
-    max-width: 400px;
+    margin: 0 auto 30px;
+    max-width: 350px;
     overflow: hidden;
 }
 
 .intro__image {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.intro__image:hover {
+    transform: scale(1.05);
 }
 
 .intro__description {
-    font-size: 16px;
-    color: #000000;
-    margin-bottom: 20px;
+    font-size: 18px;
+    color: #00796b;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
+    border-radius: 30px;
+    background-color: #00796b;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button--cta:hover {
-    background-color: #0056b3;
+    background-color: #004d40;
     transform: scale(1.05);
 }
 
