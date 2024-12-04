@@ -1,5 +1,3 @@
-/* style.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-    background-color: #87CEEB; 
+    background-color: #f0f8ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,29 +17,29 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #add8e6; 
+    overflow: hidden;
 }
 
 .background {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100%;
-    background: url('https://www.example.com/background.jpg') no-repeat center center;
+    background: url('https://www.example.com/forest.jpg') no-repeat center center;
     background-size: cover;
-    animation: moveBackground 10s infinite linear;
+    animation: moveBackground 8s infinite linear;
 }
 
 .pokemon {
     position: absolute;
     bottom: 10%;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: url('https://pokemondb.net/sprites/black-white/anim/normal/pikachu.gif') no-repeat;
+    left: -150px;
+    width: 120px;
+    height: 120px;
+    background: url('https://pokemondb.net/sprites/black-white/anim/normal/pikachu.gif') no-repeat center;
     background-size: contain;
-    animation: movePokemon 5s infinite alternate;
+    animation: movePokemon 8s infinite linear;
 }
 
 @keyframes moveBackground {
@@ -49,21 +47,20 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 @keyframes movePokemon {
     0% {
-        left: 0;
-        transform: rotate(0deg);
+        left: -150px;
     }
     50% {
         left: 50%;
-        transform: rotate(180deg);
+        transform: translateX(-50%) rotate(15deg);
     }
     100% {
         left: 100%;
-        transform: rotate(360deg);
+        transform: translateX(-50%) rotate(-15deg);
     }
 }
