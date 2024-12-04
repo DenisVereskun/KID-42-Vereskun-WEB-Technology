@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #f0f8ff;
     display: flex;
@@ -26,20 +20,21 @@ body {
     left: 0;
     width: 200%;
     height: 100%;
-    background: url('https://img.freepik.com/vecteurs-premium/arriere-plan-harmonieux-pixel-art-montagnes-herbe-nuages-paysage-pour-jeu-programme_148553-728.jpg') no-repeat center center;
+    background: url('https://st.depositphotos.com/1938351/2388/v/450/depositphotos_23884323-stock-illustration-horizontal-banners-of-hills-deciduous.jpg') no-repeat center center;
     background-size: cover;
     animation: moveBackground 8s infinite linear;
 }
 
 .pokemon {
+    transform: scaleX(-1);
     position: absolute;
     bottom: 10%;
     left: -150px;
-    width: 120px;
-    height: 120px;
-    background: url('https://img.pokemondb.net/sprites/black-white/anim/back-normal/beedrill.gif') no-repeat center;
+    width: 300px;
+    height: 1020px;
+    background: url('https://img.pokemondb.net/sprites/black-white/anim/normal/ninjask.gif') no-repeat center;
     background-size: contain;
-    animation: movePokemon 8s infinite linear;
+    animation: movePokemon 9s infinite linear;
 }
 
 @keyframes moveBackground {
