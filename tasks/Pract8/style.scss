@@ -1,4 +1,4 @@
-// Змінні
+
 $primary-color: #007bff;
 $secondary-color: #333;
 $background-color: #f9f9f9;
@@ -7,7 +7,7 @@ $font-family: 'Arial', sans-serif;
 $border-radius: 5px;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-// Міксини
+
 @mixin box-shadow($x: 0, $y: 4px, $blur: 8px, $color: rgba(0, 0, 0, 0.1)) {
     -webkit-box-shadow: $x $y $blur $color;
     -moz-box-shadow: $x $y $blur $color;
@@ -34,7 +34,6 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
-// Основні стилі
 body {
     font-family: $font-family;
     background-color: $background-color;
@@ -88,7 +87,6 @@ body {
     }
 }
 
-// Кнопка
 .button {
     @include button-style($primary-color, $button-hover-color);
 }
