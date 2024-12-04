@@ -1,91 +1,50 @@
 body {
-    margin-top: 10%;
-    font-family: 'Georgia', Times, serif;
-    background-color: #fdfdfd; /* Класичний білий фон */
-    color: #000; /* Чорний текст */
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    text-align: justify;
-    padding: 20px;
-    border: 1px solid #ddd; /* Легкий контур для статей */
-    max-width: 800px;
-    margin: auto;
-    background: #ffffff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    height: 80vh;
 }
 
 .p1 {
-    background: #f4f4f4; /* Легкий сірий фон */
-    color: #333; /* Темно-сірий текст */
-    padding: 15px 30px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    width: auto;
-    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.container-video {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-top: 2px solid #444; /* Лінія для розділення секцій */
-    padding-top: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .p1:hover {
-    background: #eaeaea; /* Яскравіший сірий при наведенні */
-    border-color: #888;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.p1:active {
-    transform: scale(0.97);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-    text-align: center;
-    margin: 30px auto;
-    color: #444; /* Темно-сірий заголовок */
-    font-size: 28px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #444; /* Лінія під заголовком */
-    padding-bottom: 10px;
+    background-color: #0056b3;
 }
 
 .button-link {
-    background: #f4f4f4;
-    color: #000; /* Чорний текст */
-    padding: 10px 15px;
-    text-decoration: none; 
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .button-link:hover {
-    background: #eaeaea;
-    border-color: #888;
-    color: #444;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.button-link:active {
-    transform: scale(0.97);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #218838;
 }
