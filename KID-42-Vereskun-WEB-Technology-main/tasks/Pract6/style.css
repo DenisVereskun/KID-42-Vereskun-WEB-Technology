@@ -1,80 +1,69 @@
-body {
+/* style.css */
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #87CEEB; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
 }
 
 .container {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #add8e6; 
 }
-
 
 .background {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #87CEEB;
+    background: url('https://www.example.com/background.jpg') no-repeat center center;
+    background-size: cover;
     animation: moveBackground 10s infinite linear;
 }
 
+.pokemon {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: url('https://pokemondb.net/sprites/black-white/anim/normal/pikachu.gif') no-repeat;
+    background-size: contain;
+    animation: movePokemon 5s infinite alternate;
+}
 
 @keyframes moveBackground {
     0% {
-        background-position: 0 0;
+        transform: translateX(0);
     }
     100% {
-        background-position: 100% 100%;
+        transform: translateX(-100%);
     }
 }
 
-
-.pokemon-sprite {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-}
-
-.pokemon-sprite img {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-
-.first-pokemon {
-    animation: moveFirstPokemon 5s infinite ease-in-out;
-}
-
-@keyframes moveFirstPokemon {
+@keyframes movePokemon {
     0% {
-        transform: translateX(-300px) translateY(300px); 
+        left: 0;
+        transform: rotate(0deg);
     }
     50% {
-        transform: translateX(1000px) translateY(200px); 
+        left: 50%;
+        transform: rotate(180deg);
     }
     100% {
-        transform: translateX(-100px) translateY(300px); 
-    }
-}
-
-.second-pokemon {
-    animation: moveSecondPokemon 5s infinite ease-in-out;
-}
-
-@keyframes moveSecondPokemon {
-    0% {
-        transform: translateX(2000px) translateY(-50px);
-    }
-    50% {
-        transform: translateX(1000px) translateY(300px);
-    }
-    100% {
-        transform: translateX(2000px) translateY(-50px);
+        left: 100%;
+        transform: rotate(360deg);
     }
 }
