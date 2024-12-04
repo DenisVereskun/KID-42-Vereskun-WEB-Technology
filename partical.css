@@ -2,26 +2,26 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     box-sizing: border-box;
-    background-color: white; /* Білий фон, характерний для газет */
-    color: black; /* Чорний текст */
-    line-height: 1.8; /* Збільшений міжрядковий інтервал для читабельності */
+    background-color: white; 
+    color: black; 
+    line-height: 1.8; 
 }
 
 h2 {
     text-align: center;
     margin: 30px auto;
-    color: black; /* Чорний заголовок */
+    color: black; 
     font-size: 32px;
     font-weight: bold;
-    text-transform: uppercase; /* Великі літери для стилю заголовка */
-    border-bottom: 2px solid black; /* Лінія під заголовком */
+    text-transform: uppercase; 
+    border-bottom: 2px solid black; 
     padding-bottom: 10px;
     max-width: 80%;
 }
 
 .navbar {
-    background-color: white; /* Білий фон */
-    border-bottom: 2px solid black; /* Чорна лінія внизу */
+    background-color: white; 
+    border-bottom: 2px solid black; 
     padding: 10px 20px;
     font-size: 15px;
     text-align: center;
@@ -40,24 +40,24 @@ h2 {
 }
 
 .nav-links a {
-    color: black; /* Чорні посилання */
+    color: black; 
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* Великі літери */
+    text-transform: uppercase; 
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline; 
 }
 
 footer {
-    color: black; /* Чорний текст футера */
+    color: black; 
     padding: 10px 20px;
     text-align: center;
-    border-top: 2px solid black; /* Верхня чорна лінія */
+    border-top: 2px solid black; 
     margin-top: 20px;
     font-size: 12px;
-    background-color: white; /* Білий фон */
+    background-color: white; 
 }
 
 .social-icons {
@@ -71,14 +71,14 @@ footer {
     width: 30px;
     height: 30px;
     margin: 0 5px;
-    border: 1px solid black; /* Чорна рамка */
+    border: 1px solid black; 
     padding: 3px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .social-links a:hover img {
     transform: scale(1.1);
-    filter: brightness(1.2); /* Підвищення яскравості */
+    filter: brightness(1.2); 
 }
 
 .social-links a {
@@ -88,11 +88,11 @@ footer {
 .article {
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid black; /* Чорна рамка для статей */
+    border: 1px solid black; 
     max-width: 80%;
-    background-color: #f8f8f8; /* Легкий сірий відтінок */
+    background-color: #f8f8f8; 
     text-align: justify;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для об'єму */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .article h3 {
@@ -100,7 +100,7 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 15px;
-    border-bottom: 1px solid black; /* Лінія під заголовком статті */
+    border-bottom: 1px solid black; 
     padding-bottom: 5px;
 }
 
@@ -109,10 +109,9 @@ footer {
 }
 
 .article p:first-line {
-    font-weight: bold; /* Виділення першого рядка */
+    font-weight: bold; 
 }
 
-/* Додатковий стиль для колонок */
 .columns {
     display: flex;
     gap: 20px;
@@ -123,7 +122,7 @@ footer {
 .column {
     flex: 1;
     padding: 20px;
-    border: 1px solid black; /* Чорна рамка для колон */
-    background-color: #f8f8f8; /* Легкий сірий відтінок */
+    border: 1px solid black; 
+    background-color: #f8f8f8; 
     text-align: justify;
 }
