@@ -4,7 +4,6 @@ body {
   padding: 0;
   background-color: #f9f9f9;
 }
-
 .planner {
   width: 90%;
   max-width: 1200px;
@@ -14,7 +13,6 @@ body {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
 header {
   display: flex;
   flex-direction: column;
@@ -23,18 +21,14 @@ header {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-
 h1 {
   font-size: 28px;
   margin: 0;
 }
-
 h7 {
   font-size: 14px;
   margin: 0;
 }
-
-
 .header-details {
   display: flex;
   flex-wrap: wrap;
@@ -43,12 +37,10 @@ h7 {
   font-size: 14px;
   margin-top: 10px;
 }
-
 .header-details div {
   flex: 1;
   text-align: center;
 }
-
 .header-details input[type="text"] {
   border: none;
   border-bottom: 1px solid #000;
@@ -57,32 +49,26 @@ h7 {
   width: 120px;
   font-size: 14px;
 }
-
 main {
   display: flex;
   gap: 20px;
 }
-
 .left-section {
   width: 30%;
 }
-
 .left-section h2 {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
 .left-section ul {
   list-style: none;
   padding: 0;
 }
-
 .left-section ul li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
 .left-section ul li input[type="text"] {
   flex: 1;
   border: 1px solid #ccc;
@@ -91,14 +77,12 @@ main {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .right-section {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-
 .day {
   border: 1px solid #ccc;
   padding: 10px;
@@ -106,13 +90,11 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 .day h2 {
   margin: 0 0 10px;
   font-size: 14px;
   text-align: center;
 }
-
 textarea {
   width: 100%;
   height: 100px;
@@ -123,7 +105,6 @@ textarea {
   resize: none;
   box-sizing: border-box;
 }
-
 textarea:focus,
 input[type="text"]:focus {
   outline: none;
